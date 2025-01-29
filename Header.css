@@ -1,0 +1,77 @@
+/* General Header Styles */
+header {
+    background-color: #006400; /* Green */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  header h1 {
+    margin: 0;
+    color: white;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+  }
+  
+  nav a:hover {
+    background-color: #004d00; /* Darker green */
+    border-radius: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%; /* Ensure dropdown appears below the "About" link */
+    left: 0; /* Align dropdown to the left of the parent */
+    background-color: #004d00; /* Dark green */
+    color: white;
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+    min-width: 200px; /* Ensure proper width */
+  }
+  
+  .dropdown-menu li {
+    padding: 5px 15px;
+  }
+  
+  .dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #006400; /* Highlight */
+    border-radius: 5px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block; /* Display dropdown on hover */
+  }
+  
+  .dropdown a {
+    text-align: left;
+  }
+  
+  nav > .dropdown {
+    display: flex;
+    align-items: center;
+  }
+  
